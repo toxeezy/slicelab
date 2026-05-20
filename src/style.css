@@ -24,6 +24,18 @@
   --maxw: 1240px;
   --pad: clamp(20px, 4vw, 56px);
   --radius: 6px;
+
+  /* Swiper theme overrides */
+  --swiper-theme-color: var(--accent);
+  --swiper-navigation-color: var(--ink);
+  --swiper-navigation-size: 14px;
+  --swiper-pagination-color: var(--accent);
+  --swiper-pagination-bullet-inactive-color: rgba(255, 220, 170, 0.2);
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-bullet-width: 24px;
+  --swiper-pagination-bullet-height: 4px;
+  --swiper-pagination-bullet-border-radius: 2px;
+  --swiper-pagination-bullet-horizontal-gap: 3px;
 }
 
 * { box-sizing: border-box; }
@@ -328,14 +340,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   background: var(--bg-2);
 }
 
-.slider-track {
-  display: flex;
-  transition: transform 0.7s cubic-bezier(0.65, 0, 0.2, 1);
-  will-change: transform;
-}
-
 .slide {
-  flex: 0 0 100%;
   position: relative;
   margin: 0;
   aspect-ratio: 16 / 10;
@@ -406,12 +411,18 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   font-weight: 600;
 }
 
-.slider-btn {
+/* Override Swiper navigation sizing — keep our round dark buttons */
+:is(.swiper-button-prev, .swiper-button-next) .swiper-navigation-icon {
+  width: 40%;
+  height: 40%;
+}
+.slider .slider-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   width: 48px;
   height: 48px;
+  margin: 0;
   border-radius: 50%;
   background: rgba(12, 10, 8, 0.75);
   color: var(--ink);
@@ -422,38 +433,41 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   z-index: 3;
   transition: background 0.2s, color 0.2s, border-color 0.2s;
 }
-.slider-btn:hover {
+.slider .slider-btn:hover {
   background: var(--accent);
   color: var(--bg);
   border-color: var(--accent);
 }
-.slider-prev { left: 18px; }
-.slider-next { right: 18px; }
+.slider .slider-prev { left: 18px; right: auto; }
+.slider .slider-next { right: 18px; left: auto; }
 
-.slider-dots {
+/* Swiper renders chevrons via ::after using its 'swiper-icons' font */
+.slider .slider-btn::after {
+  font-size: var(--swiper-navigation-size);
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+/* Pagination — anchored bottom-right, dashed bullets */
+.slider .slider-dots.swiper-pagination {
   position: absolute;
   bottom: 18px;
   right: 22px;
-  display: flex;
-  gap: 6px;
+  left: auto;
+  width: auto;
   z-index: 3;
 }
-.slider-dots button {
-  width: 24px;
-  height: 4px;
-  border-radius: 2px;
-  background: rgba(255, 220, 170, 0.2);
+.slider .swiper-pagination-bullet {
   transition: background 0.2s, width 0.3s;
 }
-.slider-dots button[aria-current="true"] {
-  background: var(--accent);
+.slider .swiper-pagination-bullet-active {
   width: 36px;
 }
 
 @media (max-width: 560px) {
-  .slider-btn { width: 38px; height: 38px; }
-  .slider-prev { left: 10px; }
-  .slider-next { right: 10px; }
+  .slider .slider-btn { width: 38px; height: 38px; }
+  .slider .slider-prev { left: 10px; }
+  .slider .slider-next { right: 10px; }
 }
 
 /* ---------- SERVICES ---------- */
@@ -614,32 +628,9 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   border-top: 1px solid var(--line);
 }
 .materials-head {
-  display: grid;
-  grid-template-columns: 1fr 0.55fr;
-  gap: clamp(20px, 4vw, 48px);
-  align-items: end;
   margin-bottom: clamp(32px, 5vw, 56px);
 }
 .materials-head .section-head { margin-bottom: 0; }
-.materials-photo {
-  margin: 0;
-  border-radius: var(--radius);
-  overflow: hidden;
-  border: 1px solid var(--line);
-  aspect-ratio: 4 / 3;
-  background: var(--bg-2);
-}
-.materials-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  filter: saturate(108%);
-}
-@media (max-width: 720px) {
-  .materials-head { grid-template-columns: 1fr; }
-  .materials-photo { aspect-ratio: 16 / 10; }
-}
 .materials-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

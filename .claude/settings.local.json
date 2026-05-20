@@ -11,7 +11,13 @@
       "Bash(npx tsc *)",
       "Bash(timeout 8 npx vite --port 5182 --host 127.0.0.1)",
       "Bash(curl -s http://127.0.0.1:5182/)",
-      "Bash(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:5182/images/__TRACKED_VAR__)"
+      "Bash(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:5182/images/__TRACKED_VAR__)",
+      "Bash(npm install *)",
+      "Bash(timeout 7 npx vite --port 5183 --host 127.0.0.1)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://127.0.0.1:5183/)",
+      "Bash(curl -s http://127.0.0.1:5183/)",
+      "Bash(curl -s http://127.0.0.1:5183/src/main.ts)",
+      "Bash(npx vite *)"
     ]
   }
 }
