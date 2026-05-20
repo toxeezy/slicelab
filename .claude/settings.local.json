@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Move-Item *)",
+      "Bash(timeout 12 npx vite --port 5180 --host 127.0.0.1)",
+      "Bash(timeout 8 npx vite --port 5181 --host 127.0.0.1)",
+      "Bash(curl -s http://127.0.0.1:5181/ -o /tmp/page.html)",
+      "Read(//tmp/**)",
+      "Bash(curl -s http://127.0.0.1:5181/src/main.ts -o /tmp/main.js)",
+      "Bash(wait)",
+      "Bash(npx tsc *)",
+      "Bash(timeout 8 npx vite --port 5182 --host 127.0.0.1)",
+      "Bash(curl -s http://127.0.0.1:5182/)",
+      "Bash(curl -s -o /dev/null -w '%{http_code}' http://127.0.0.1:5182/images/__TRACKED_VAR__)"
+    ]
+  }
+}
