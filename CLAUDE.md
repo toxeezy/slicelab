@@ -24,7 +24,7 @@ Vanilla TS + Vite, no framework. The page is **HTML-first**: all content and str
 
 ## Assets
 
-- **`public/images/`** — Vite serves this at site root (`/images/...`). The slider references `example-1.JPG` … `example-7.jpg` (note: mixed case extensions, kept literally). `printer.jpg` powers the Qidi block, `materials.jpg` the materials section header. `cover.png` is the Kufar ad artwork — currently unused on the landing.
+- **`public/images/`** — Vite serves this at site root (`/images/...`). Photos are stored as both original JPG/PNG and generated `.webp` siblings; `index.html` references the `.webp` versions. Run `npm run images` after dropping new photos in here — it produces sibling `.webp` files via `sharp` and rewrites matching `/images/*.{jpg,jpeg,png}` references in `index.html` to `.webp`. Conversion is idempotent (skips when the `.webp` is newer than its source).
 - **Image orientation matters**: slides use `object-fit: contain` because the source photos are portrait phone shots. Switching to `cover` will crop them. The slide aspect ratio is `16/10` on desktop, `4/5` on mobile.
 - **`src/assets/`** — leftover from the Vite scaffold (`hero.png`, `typescript.svg`, `vite.svg`), not referenced.
 
