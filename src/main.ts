@@ -1,3 +1,26 @@
+import '@fontsource/unbounded/latin-400.css';
+import '@fontsource/unbounded/cyrillic-400.css';
+import '@fontsource/unbounded/latin-600.css';
+import '@fontsource/unbounded/cyrillic-600.css';
+import '@fontsource/unbounded/latin-800.css';
+import '@fontsource/unbounded/cyrillic-800.css';
+import '@fontsource/unbounded/latin-900.css';
+import '@fontsource/unbounded/cyrillic-900.css';
+import '@fontsource/ibm-plex-sans/latin-300.css';
+import '@fontsource/ibm-plex-sans/cyrillic-300.css';
+import '@fontsource/ibm-plex-sans/latin-400.css';
+import '@fontsource/ibm-plex-sans/cyrillic-400.css';
+import '@fontsource/ibm-plex-sans/latin-500.css';
+import '@fontsource/ibm-plex-sans/cyrillic-500.css';
+import '@fontsource/ibm-plex-sans/latin-600.css';
+import '@fontsource/ibm-plex-sans/cyrillic-600.css';
+import '@fontsource/ibm-plex-mono/latin-400.css';
+import '@fontsource/ibm-plex-mono/cyrillic-400.css';
+import '@fontsource/ibm-plex-mono/latin-500.css';
+import '@fontsource/ibm-plex-mono/cyrillic-500.css';
+import '@fontsource/ibm-plex-mono/latin-600.css';
+import '@fontsource/ibm-plex-mono/cyrillic-600.css';
+
 import './style.css';
 import Swiper from 'swiper';
 import { Navigation, Pagination, Autoplay, Keyboard, A11y } from 'swiper/modules';

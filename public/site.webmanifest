@@ -1,0 +1,22 @@
+{
+  "name": "SliceLab — 3D-печать на заказ в Минске",
+  "short_name": "SliceLab",
+  "description": "3D-печать на заказ в Минске: шестерни, корпуса, крепления, прототипы. PLA / PETG / ABS / ASA / Nylon / TPU.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0c0a08",
+  "theme_color": "#0c0a08",
+  "lang": "ru",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

@@ -2,13 +2,103 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0c0a08" />
+
+    <title>3D-печать на заказ в Минске · SliceLab — PLA, PETG, ABS, Nylon</title>
     <meta name="description" content="3D-печать на заказ в Минске. Шестерни, корпуса, крепления, прототипы. PLA / PETG / ABS / ASA / Nylon / TPU. Печать по фото, образцу, чертежу или STL/STEP/OBJ." />
-    <title>3D-печать на заказ — Минск</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800;900&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="canonical" href="https://slicelab.by/" />
+
+    <meta name="author" content="SliceLab" />
+    <meta name="geo.region" content="BY-HM" />
+    <meta name="geo.placename" content="Минск" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="SliceLab" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:url" content="https://slicelab.by/" />
+    <meta property="og:title" content="3D-печать на заказ в Минске · SliceLab" />
+    <meta property="og:description" content="Изготавливаем детали на 3D-принтере под заказ — шестерни, корпуса, крепления, автопластик. PLA / PETG / ABS / ASA / Nylon / TPU. Печать по фото, образцу, чертежу или STL/STEP/OBJ." />
+    <meta property="og:image" content="https://slicelab.by/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="SliceLab — 3D-печать на заказ в Минске" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="3D-печать на заказ в Минске · SliceLab" />
+    <meta name="twitter:description" content="Изготавливаем детали на 3D-принтере под заказ. PLA / PETG / ABS / ASA / Nylon / TPU. Печать по фото, образцу, чертежу или STL/STEP/OBJ." />
+    <meta name="twitter:image" content="https://slicelab.by/og-image.png" />
+
+    <!-- LCP preload -->
+    <link rel="preload" as="image" href="/images/example-1.webp" fetchpriority="high" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://slicelab.by/#business",
+          "name": "SliceLab",
+          "url": "https://slicelab.by/",
+          "image": "https://slicelab.by/og-image.png",
+          "logo": "https://slicelab.by/favicon.svg",
+          "description": "3D-печать на заказ в Минске: шестерни, корпуса, крепления, прототипы, автопластик. Материалы PLA, PETG, ABS, ASA, Nylon, TPU. Доставка по Беларуси.",
+          "telephone": ["+375336651586", "+375298380663"],
+          "email": "evgeny.salash@gmail.com",
+          "priceRange": "BYN",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Минск",
+            "addressCountry": "BY"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "Belarus"
+          },
+          "openingHoursSpecification": [{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "09:00",
+            "closes": "20:00"
+          }],
+          "sameAs": [
+            "https://t.me/slicelab_by",
+            "https://www.kufar.by/item/1069556781"
+          ]
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://slicelab.by/#org",
+          "name": "ИП Салаш Евгений Леонидович",
+          "legalName": "ИП Салаш Евгений Леонидович",
+          "url": "https://slicelab.by/",
+          "taxID": "291861648",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ул. Лесная, д. 8, д. Молчадь",
+            "addressLocality": "Барановичский район",
+            "postalCode": "225340",
+            "addressCountry": "BY"
+          }
+        },
+        {
+          "@type": "Service",
+          "name": "3D-печать на заказ",
+          "provider": { "@id": "https://slicelab.by/#business" },
+          "areaServed": { "@type": "Country", "name": "Belarus" },
+          "serviceType": "3D-печать",
+          "description": "Изготовление пластиковых деталей на FDM/FFF 3D-принтере: шестерни, корпуса, крепления, заглушки, прототипы. Материалы: PLA, PETG, ABS, ASA, Nylon, TPU."
+        }
+      ]
+    }
+    </script>
   </head>
   <body>
     <a class="skip-link" href="#main">К содержимому</a>
@@ -29,10 +119,10 @@
         </span>
       </div>
       <nav class="site-nav">
-        <a href="#услуги">Услуги</a>
-        <a href="#процесс">Как работаем</a>
-        <a href="#материалы">Материалы</a>
-        <a href="#контакты" class="nav-cta">Заказать</a>
+        <a href="#services">Услуги</a>
+        <a href="#process">Как работаем</a>
+        <a href="#materials">Материалы</a>
+        <a href="#contact" class="nav-cta">Заказать</a>
       </nav>
     </header>
 
@@ -56,11 +146,11 @@
           </p>
 
           <div class="hero-ctas">
-            <a href="#контакты" class="btn btn-primary">
+            <a href="#contact" class="btn btn-primary">
               <span>Рассчитать стоимость</span>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>
             </a>
-            <a href="#услуги" class="btn btn-ghost">Что печатаем</a>
+            <a href="#services" class="btn btn-ghost">Что печатаем</a>
           </div>
 
           <dl class="hero-stats">
@@ -94,31 +184,31 @@
         <div class="slider swiper" id="slider">
           <div class="swiper-wrapper">
             <figure class="slide swiper-slide" data-label="Волновая подставка">
-              <img src="/images/example-1.webp" alt="Волновая подставка, чёрный PLA" loading="lazy" onerror="this.classList.add('img-fallback')" />
+              <img src="/images/example-1.webp" alt="Волновая подставка, чёрный PLA" width="768" height="1024" fetchpriority="high" onerror="this.classList.add('img-fallback')" />
               <figcaption><span>01</span> Волновая подставка</figcaption>
             </figure>
             <figure class="slide swiper-slide" data-label="Подставки для смартфона">
-              <img src="/images/example-2.webp" alt="Подставки для смартфона, две расцветки" loading="lazy" onerror="this.classList.add('img-fallback')" />
+              <img src="/images/example-2.webp" alt="Подставки для смартфона, две расцветки" width="768" height="1024" loading="lazy" onerror="this.classList.add('img-fallback')" />
               <figcaption><span>02</span> Подставки для смартфона</figcaption>
             </figure>
             <figure class="slide swiper-slide" data-label="Декоративная игрушка">
-              <img src="/images/example-3.webp" alt="Декоративная игрушка-осьминог с текстурой вязки" loading="lazy" onerror="this.classList.add('img-fallback')" />
+              <img src="/images/example-3.webp" alt="Декоративная игрушка-осьминог с текстурой вязки" width="768" height="1024" loading="lazy" onerror="this.classList.add('img-fallback')" />
               <figcaption><span>03</span> Декор · игрушка</figcaption>
             </figure>
             <figure class="slide swiper-slide" data-label="Декоративная фигура">
-              <img src="/images/example-4.webp" alt="Декоративная фигура, фиолетовый филамент" loading="lazy" onerror="this.classList.add('img-fallback')" />
+              <img src="/images/example-4.webp" alt="Декоративная фигура, фиолетовый филамент" width="768" height="1024" loading="lazy" onerror="this.classList.add('img-fallback')" />
               <figcaption><span>04</span> Декоративная фигура</figcaption>
             </figure>
             <figure class="slide swiper-slide" data-label="Подставка-звезда">
-              <img src="/images/example-5.webp" alt="Подставка-звезда с рёбрами" loading="lazy" onerror="this.classList.add('img-fallback')" />
+              <img src="/images/example-5.webp" alt="Подставка-звезда с рёбрами" width="768" height="1024" loading="lazy" onerror="this.classList.add('img-fallback')" />
               <figcaption><span>05</span> Подставка · звезда</figcaption>
             </figure>
             <figure class="slide swiper-slide" data-label="Печать в процессе">
-              <img src="/images/example-6.webp" alt="Печать корзины на принтере Qidi Q2" loading="lazy" onerror="this.classList.add('img-fallback')" />
+              <img src="/images/example-6.webp" alt="Печать корзины на принтере Qidi Q2" width="768" height="1024" loading="lazy" onerror="this.classList.add('img-fallback')" />
               <figcaption><span>06</span> Процесс · Qidi Q2</figcaption>
             </figure>
             <figure class="slide swiper-slide" data-label="Органайзеры для стола">
-              <img src="/images/example-7.webp" alt="Карандашницы и органайзеры для рабочего стола" loading="lazy" onerror="this.classList.add('img-fallback')" />
+              <img src="/images/example-7.webp" alt="Карандашницы и органайзеры для рабочего стола" width="1086" height="1448" loading="lazy" onerror="this.classList.add('img-fallback')" />
               <figcaption><span>07</span> Органайзеры для стола</figcaption>
             </figure>
           </div>
@@ -131,7 +221,7 @@
       </section>
 
       <!-- WHAT WE PRINT -->
-      <section class="services" id="услуги">
+      <section class="services" id="services">
         <div class="section-head">
           <span class="section-num">// 003</span>
           <h2>Что печатаем<span class="dim"> · по заказу</span></h2>
@@ -192,7 +282,7 @@
       </section>
 
       <!-- HOW WE WORK -->
-      <section class="process" id="процесс">
+      <section class="process" id="process">
         <div class="section-head">
           <span class="section-num">// 004</span>
           <h2>Работаем по<span class="dim"> · любым исходникам</span></h2>
@@ -228,7 +318,7 @@
       </section>
 
       <!-- MATERIALS -->
-      <section class="materials" id="материалы">
+      <section class="materials" id="materials">
         <div class="materials-head">
           <div class="section-head">
             <span class="section-num">// 005</span>
@@ -238,34 +328,34 @@
 
         <div class="materials-grid">
           <article class="material">
-            <header><span>PLA</span><em>универсал</em></header>
+            <header><h3>PLA</h3><em>универсал</em></header>
             <p>Лёгкая печать, отличная детализация, для декора и прототипов.</p>
           </article>
           <article class="material">
-            <header><span>PETG</span><em>прочность</em></header>
+            <header><h3>PETG</h3><em>прочность</em></header>
             <p>Жёсткий, износостойкий, химически устойчивый. Корпуса, крепления.</p>
           </article>
           <article class="material">
-            <header><span>ABS</span><em>термостойкость</em></header>
+            <header><h3>ABS</h3><em>термостойкость</em></header>
             <p>Привычный «промышленный» пластик. Детали для техники.</p>
           </article>
           <article class="material">
-            <header><span>ASA</span><em>авто & улица</em></header>
+            <header><h3>ASA</h3><em>авто & улица</em></header>
             <p>Устойчив к UV и погоде. Детали для авто и наружного применения.</p>
           </article>
           <article class="material">
-            <header><span>Nylon</span><em>механика</em></header>
+            <header><h3>Nylon</h3><em>механика</em></header>
             <p>Высокая прочность и износостойкость. Шестерни, узлы трения.</p>
           </article>
           <article class="material">
-            <header><span>TPU</span><em>гибкость</em></header>
+            <header><h3>TPU</h3><em>гибкость</em></header>
             <p>Эластичный, демпфирующий. Уплотнения, гибкие вставки.</p>
           </article>
         </div>
 
         <div class="rig-block">
           <figure class="rig-photo">
-            <img src="/images/printer.webp" alt="3D-принтер Qidi Q2 Combo в мастерской" loading="lazy" />
+            <img src="/images/printer.webp" alt="3D-принтер Qidi Q2 Combo в мастерской" width="1086" height="1448" loading="lazy" />
             <figcaption>Qidi Q2 · мастерская</figcaption>
           </figure>
           <div class="rig-body">
@@ -284,7 +374,7 @@
       </section>
 
       <!-- CONTACT -->
-      <section class="contact" id="контакты">
+      <section class="contact" id="contact">
         <div class="section-head">
           <span class="section-num">// 006</span>
           <h2>Расчёт стоимости<span class="dim"> · за&nbsp;15–30&nbsp;минут</span></h2>
@@ -356,7 +446,7 @@
     </main>
 
     <footer class="site-footer">
-      <div class="footer-legal">
+      <address class="footer-legal">
         <div class="footer-legal-head">
           <strong>ИП&nbsp;Салаш Евгений Леонидович</strong>
           <span>Индивидуальный предприниматель</span>
@@ -383,7 +473,7 @@
             <dd><a href="mailto:evgeny.salash@gmail.com">evgeny.salash@gmail.com</a></dd>
           </div>
         </dl>
-      </div>
+      </address>
 
       <div class="footer-bar">
         <div>
