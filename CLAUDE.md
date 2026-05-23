@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-Single-page Russian-language landing for a Minsk 3D-printing service ("toxeezy"). The page mirrors a Kufar listing: hero, photo slider, services, materials, the Qidi Q2 printer, and contact. There is no backend — leads go to the Kufar URL or a tel: link.
+Single-page Russian-language landing for a Minsk 3D-printing service ("SliceLab"). The page mirrors a Kufar listing: hero, photo slider, services, materials, the Qidi Q2 printer, and contact. There is no backend — leads go to the Kufar URL or a tel: link.
 
 ## Commands
 

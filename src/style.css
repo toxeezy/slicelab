@@ -465,9 +465,12 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 }
 
 @media (max-width: 560px) {
-  .slider .slider-btn { width: 38px; height: 38px; }
-  .slider .slider-prev { left: 10px; }
-  .slider .slider-next { right: 10px; }
+  .slider .slider-btn { display: none; }
+  .slider .slider-dots.swiper-pagination {
+    bottom: 4px;
+    right: 2px;
+    line-height: 4px;
+  }
 }
 
 /* ---------- SERVICES ---------- */
@@ -830,6 +833,37 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
+
+.contact-methods {
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+.contact-methods li {
+  font-family: var(--font-mono);
+  font-size: 13.5px;
+  padding: 10px 16px;
+  border: 1px dashed var(--line);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+.contact-method-label {
+  color: var(--ink-faint);
+  letter-spacing: 0.06em;
+}
+.contact-method-value {
+  color: var(--ink);
+  margin-left: auto;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+.contact-method-value:hover { color: var(--accent); }
+
 .contact-mini {
   font-family: var(--font-mono);
   font-size: 12px;
