@@ -34,3 +34,4 @@ Vanilla TS + Vite, no framework. The page is **HTML-first**: all content and str
 - Prefix unused params with `_` or omit them.
 - Use `import type` for type-only imports.
 - No `enum`, `namespace`, or other emit-bearing TS syntax.
+test
